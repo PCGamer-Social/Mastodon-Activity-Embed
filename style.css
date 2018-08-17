@@ -10,9 +10,11 @@ body,html {
 }
 
 .section b, .about b {
+    font-size: 26px;
+    line-height: 30px;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
+    margin-bottom: 20px;
+    color: #d9e1e8;
 }
 
 .section b {
