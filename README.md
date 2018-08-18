@@ -9,7 +9,7 @@ Easy to display activities of your own instance.
 - **It needs Mastodon v2.1.2 or later, and `Publish aggregate statistics about user activity` must be enabled. (Please check administration panel.)**
 
 ```html
-<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?YOUR-INSTANCE-DOMAIN" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?YOUR-INSTANCE-DOMAIN&showDomain=1" frameborder="0" scrolling="no"></iframe>
 </div>
 </div>
 </div>
@@ -37,6 +37,10 @@ Easy to display activities of your own instance.
 ```
 Please add this snippet to the beginning of a __Custom extended information__.
 
-![image](https://user-images.githubusercontent.com/14953122/38171107-b18932aa-35cd-11e8-9268-8317d9970ada.png)
+And replace `YOUR-INSTANCE-DOMAIN` and choose `showDomain` option.
+
+If you set `showDomain=1` shows your instance domain. `0` is none.
+
+![Screenshot](https://i.imgur.com/eUoRU4J.png)
 
 If you want to run this on your own server, you can download to use it.
