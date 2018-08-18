@@ -1,40 +1,44 @@
 <html>
+
 <head>
     <meta charset=utf-8>
     <meta content=width=device-width,initial-scale=1 name=viewport>
     <title>Mastodon Activity Embed</title>
-    <link rel="stylesheet" href="style.css?2018-08-17-2">
+    <link rel="stylesheet" href="style.css?2018-08-18">
 </head>
+
 <body>
-<div id="ok">
-    <div class="about">
-        <b id="text-title">Weekly activities</b> <small id="week"></small><br>
-        <small id="domain" class="invisible"></small>
-    </div>
-    <div class="container">
-        <div class="section">
-            <span id="text-new-statuses">New statuses</span>
-            <b id="toot">...</b>
-            <span id="text-statuses">statuses</span>
+    <div id="ok">
+        <div class="about">
+            <h1 id="text-title">Weekly activities</h1>
+            <span id="week"></span>
+            <span id="domain" class="invisible"></span>
         </div>
+        <div class="row">
+            <section>
+                <span id="text-registration">New users</span>
+                <strong id="new">...</strong>
+                <span id="text-registration-users">users</span>
+            </section>
 
-        <div class="section">
-            <span id="text-active-users">Active users</span>
-            <b id="login">...</b>
-            <span id="text-login-users">users</span>
-        </div>
+            <section>
+                <span id="text-new-statuses">New statuses</span>
+                <strong id="toot">...</strong>
+                <span id="text-statuses">statuses</span>
+            </section>
 
-        <div class="section">
-            <span id="text-registration">New users</span>
-            <b id="new">...</b>
-            <span id="text-registration-users">users</span>
+            <section>
+                <span id="text-active-users">Active users</span>
+                <strong id="login">...</strong>
+                <span id="text-login-users">users</span>
+            </section>
         </div>
     </div>
-</div>
-<div id="ng" class="invisible">
-    <b>Error: アクティビティを取得できませんでした。公開されていないかMastodonのバージョンが古い可能性があります。</b>
-</div>
-<script src="getActivity.js?2018-01-25"></script>
-<script src="language.js?2018-04-01"></script>
+    <div id="ng" class="invisible">
+        <strong>Error: アクティビティを取得できませんでした。公開されていないかMastodonのバージョンが古い可能性があります。</strong>
+    </div>
+    <script src="getActivity.js?2018-01-25"></script>
+    <script src="language.js?2018-04-01"></script>
 </body>
+
 </html>

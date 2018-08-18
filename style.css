@@ -1,44 +1,79 @@
 :root {
-  --text-color: #d9e1e8;
+    --text-color: #d9e1e8;
 }
 
-body,html {
-    max-width: 100%;
-    background-color:transparent;
-    font-family:-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue","Segoe UI","ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
-    color: white;
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: transparent;
+    background-color: #282c37;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-.section {
+body {
+    padding: 0 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 5px 0 20px 0;
+}
+
+.about * {
+    margin: 0;
+}
+
+.about h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+.about span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #9baec8
+}
+
+.about span#week {
+    flex-grow: 1;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
     text-align: right;
 }
 
-.section b, .about b {
+.row section {
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    padding: 0 10px;
+}
+
+.row section span {
+    display: block;
+}
+
+.row section strong {
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
 }
 
-#text-title {
-    font-size: 26px;
-    line-height: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
+.row section span:last-child {
     color: var(--text-color);
-}
-
-#week, .section span:last-child {
-    color: var(--text-color);
-}
-
-.section b {
-    display: block;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
 }
 
 .invisible {
