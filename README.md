@@ -9,7 +9,7 @@ Easy to display activities of your own instance.
 - **It needs Mastodon v2.1.2 or later, and `Publish aggregate statistics about user activity` must be enabled. (Please check administration panel.)**
 
 ```html
-<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?YOUR-INSTANCE-DOMAIN&showDomain=1" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=YOUR-INSTANCE-DOMAIN&showDomain=1" frameborder="0" scrolling="no"></iframe>
 </div>
 </div>
 </div>
