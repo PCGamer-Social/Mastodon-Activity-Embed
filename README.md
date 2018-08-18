@@ -5,7 +5,7 @@ Mastodon-Activity-Embed
 
 Easy to display activities of your own instance.
 
-## How to use
+## How to Use
 - **It needs Mastodon v2.1.2 or later, and `Publish aggregate statistics about user activity` must be enabled. (Please check administration panel.)**
 
 ```html
@@ -32,8 +32,8 @@ Easy to display activities of your own instance.
 </style>
 
 <div class="column-4">
-    <div class="box-widget">
-        <div class="rich-formatting" style="line-height: 30px;">
+<div class="box-widget">
+<div class="rich-formatting" style="line-height: 30px;">
 ```
 Please add this snippet to the beginning of a __Custom extended information__.
 
