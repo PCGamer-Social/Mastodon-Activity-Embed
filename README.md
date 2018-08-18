@@ -16,8 +16,8 @@ Easy to display activities of your own instance.
 
 <style>
     .rich-formatting {
-        line-height: 30px;
-        padding-right: 10px;
+        line-height: 0;
+        padding-right: 0;
     }
 
     iframe {
@@ -33,7 +33,7 @@ Easy to display activities of your own instance.
 
 <div class="column-4">
 <div class="box-widget">
-<div class="rich-formatting" style="line-height: 30px;">
+<div class="rich-formatting" style="line-height: 30px; padding-right: 10px;">
 ```
 Please add this snippet to the beginning of a __Custom extended information__.
 
