@@ -16,20 +16,22 @@ Easy to display activities of your own instance.
 <div id="activity-embed">
 </div>
 <script>
-    // Config Begin.
-    const domain = "YOUR-INSTANCE-DOMAIN";
-    const showDomain = false;
-    // Config End.
-    const activityEmbed = document.getElementById("activity-embed");
-    const islight = document.querySelectorAll(`link[rel="stylesheet"]`)[1].href.match(/light/);
-    let theme;
-    if (islight) {
-        theme = "light";
-    } else {
-        theme = "dark";
+    {
+        // Config Begin.
+        const domain = "YOUR-INSTANCE-DOMAIN";
+        const showDomain = false;
+        // Config End.
+        const activityEmbed = document.getElementById("activity-embed");
+        const islight = document.querySelectorAll(`link[rel="stylesheet"]`)[1].href.match(/light/);
+        let theme;
+        if (islight) {
+            theme = "light";
+        } else {
+            theme = "dark";
+        }
+        const html = `<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=${domain}&showDomain=${Number(showDomain)}&theme=${theme}" frameborder="0" scrolling="no"></iframe>`;
+        activityEmbed.innerHTML = html;
     }
-    const html = `<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=${domain}&showDomain=${Boolean(showDomain)}&theme=${theme}" frameborder="0" scrolling="no"></iframe>`;
-    activityEmbed.innerHTML = html;
 </script>
 </div>
 </div>
