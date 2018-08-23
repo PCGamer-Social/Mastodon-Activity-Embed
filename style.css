@@ -1,81 +1,85 @@
-:root {
-    --text-color: #d9e1e8;
-}
-
+@charset "UTF-8";
 html,
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    background-color: transparent;
-    /* background-color: #282c37; */
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    padding: 0 20px;
-}
-
-.about {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding: 5px 0 20px 0;
-}
-
-.about * {
-    margin: 0;
-}
-
-.about h1 {
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 30px;
-    color: var(--text-color);
-    margin-right: 5px;
-}
-
-.about span {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    color: #9baec8
-}
-
-.about span#week {
-    flex-grow: 1;
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
-    text-align: right;
-}
-
-.row section {
-    -webkit-box-flex: 1;
-    flex: 1 0 auto;
-    padding: 0 10px;
-}
-
-.row section span {
-    display: block;
-}
-
-.row section strong {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-}
-
-.row section span:last-child {
-    color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .invisible {
-    display: none;
+  display: none;
+}
+
+body {
+  padding: 0 20px;
+}
+body.light {
+  color: #000;
+}
+body.light .about h1 {
+  color: #282c37;
+}
+body.light .about span {
+  color: #282c37;
+}
+body.light .row section span:last-child {
+  color: #282c37;
+}
+body.dark {
+  color: #fff;
+}
+body.dark .about h1 {
+  color: #d9e1e8;
+}
+body.dark .about span {
+  color: #9baec8;
+}
+body.dark .row section span:last-child {
+  color: #d9e1e8;
+}
+body .about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 5px 0 20px 0;
+}
+body .about h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-right: 5px;
+}
+body .about span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+body .about span#week {
+  flex-grow: 1;
+}
+body .about * {
+  margin: 0;
+}
+body .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  text-align: right;
+}
+body .row section {
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  padding: 0 10px;
+}
+body .row section span {
+  display: block;
+}
+body .row section strong {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
 }

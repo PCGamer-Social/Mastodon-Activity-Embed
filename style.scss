@@ -1,0 +1,97 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+    "Segoe UI", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+body {
+  padding: 0 20px;
+  &.light {
+    color: #000;
+    .about {
+      h1 {
+        color: #282c37;
+      }
+      span {
+        color: #282c37;
+      }
+    }
+    .row {
+      section {
+        span:last-child {
+          color: #282c37;
+        }
+      }
+    }
+  }
+  &.dark {
+    color: #fff;
+    .about {
+      h1 {
+        color: #d9e1e8;
+      }
+      span {
+        color: #9baec8;
+      }
+    }
+    .row {
+      section {
+        span:last-child {
+          color: #d9e1e8;
+        }
+      }
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 5px 0 20px 0;
+    h1 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-right: 5px;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    span#week {
+      flex-grow: 1;
+    }
+    * {
+      margin: 0;
+    }
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    text-align: right;
+    section {
+      -webkit-box-flex: 1;
+      flex: 1 0 auto;
+      padding: 0 10px;
+      span {
+        display: block;
+      }
+      strong {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+  }
+}
