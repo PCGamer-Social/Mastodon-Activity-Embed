@@ -1,15 +1,36 @@
-Mastodon-Activity-Embed
-===
+# Mastodon-Activity-Embed
 
-![Screenshot](https://i.imgur.com/cVO0SRy.png)
+![Dark Theme Screenshot](https://i.imgur.com/uYNcNwk.png)
+
+Now Support Light theme!!!
+
+![Light Theme Screenshot](https://i.imgur.com/oN69MF8.png)
 
 Easy to display activities of your own instance.
 
 ## How to Use
+
 - **It needs Mastodon v2.1.2 or later, and `Publish aggregate statistics about user activity` must be enabled. (Please check administration panel.)**
 
 ```html
-<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=YOUR-INSTANCE-DOMAIN&showDomain=1" frameborder="0" scrolling="no"></iframe>
+<div id="activity-embed">
+</div>
+<script>
+    // Config Begin.
+    const domain = "YOUR-INSTANCE-DOMAIN";
+    const showDomain = false;
+    // Config End.
+    const activityEmbed = document.getElementById("activity-embed");
+    const islight = document.querySelectorAll(`link[rel="stylesheet"]`)[1].href.match(/light/);
+    let theme;
+    if (islight) {
+        theme = "light";
+    } else {
+        theme = "dark";
+    }
+    const html = `<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=${domain}&showDomain=${Boolean(showDomain)}&theme=${theme}" frameborder="0" scrolling="no"></iframe>`;
+    activityEmbed.innerHTML = html;
+</script>
 </div>
 </div>
 </div>
@@ -20,26 +41,28 @@ Easy to display activities of your own instance.
         padding-right: 0;
     }
 
-    iframe {
+    #activity-embed iframe {
         width: 100%;
         height: 164px;
     }
 
-    .column-4 {
+    .column-fullwidth {
         grid-column: 1/3;
-        grid-row: 4;
     }
 </style>
 
-<div class="column-4">
+<div class="column-fullwidth">
 <div class="box-widget">
-<div class="rich-formatting" style="line-height: 30px; padding-right: 10px;">
+<div class="rich-formatting" style="line-height: 30px;" id="emoji-showcase">
+
+<!-- YOUR CONTETS HERE -->
 ```
-Please add this snippet to the beginning of a __Custom extended information__.
 
-And replace `YOUR-INSTANCE-DOMAIN` and choose `showDomain` option.
+Please add this snippet to the beginning of a **Custom extended information**.
 
-If you set `showDomain=1` shows your instance domain. `0` is none.
+And set `YOUR-INSTANCE-DOMAIN`, and choose `showDomain` option.
+
+If you set `showDomain = true` shows your instance domain. `false` is none.
 
 ![Screenshot](https://i.imgur.com/eUoRU4J.png)
 
