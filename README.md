@@ -22,9 +22,9 @@ Easy to display activities of your own instance.
         const showDomain = false;
         // Config End.
         const activityEmbed = document.getElementById("activity-embed");
-        const islight = document.querySelectorAll(`link[rel="stylesheet"]`)[1].href.match(/light/);
+        const isLight = document.querySelectorAll(`link[rel="stylesheet"]`)[1].href.match(/light/);
         let theme;
-        if (islight) {
+        if (isLight) {
             theme = "light";
         } else {
             theme = "dark";
