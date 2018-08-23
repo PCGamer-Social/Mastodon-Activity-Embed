@@ -13,9 +13,6 @@ body {
   display: none;
 }
 
-body {
-  padding: 0 20px;
-}
 body.light {
   color: #000;
 }
