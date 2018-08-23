@@ -33,9 +33,9 @@ fetch("https://" + domain + "/api/v1/instance/activity", {
     let d = new Date(parseInt(json[0]["week"]) * 1000);
     let date = d.getMonth() + 1 + "/" + d.getDate();
     document.getElementById("week").innerText = "(" + date + "~)";
-    document.getElementById("toot").innerText = json[0]["statuses"];
-    document.getElementById("login").innerText = json[0]["logins"];
-    document.getElementById("new").innerText = json[0]["registrations"];
+    document.getElementById("toot").innerText = Number(json[0]["statuses"]).toLocaleString();
+    document.getElementById("login").innerText = Number(json[0]["logins"]).toLocaleString();
+    document.getElementById("new").innerText = Number(json[0]["registrations"]).toLocaleString();
   })
   .catch(function(error) {
     document.getElementById("ok").className = "invisible";
