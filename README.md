@@ -29,7 +29,7 @@ Easy to display activities of your own instance.
         } else {
             theme = "dark";
         }
-        const html = `<iframe src="https://eai04191.github.io/Mastodon-Activity-Embed/embed.html?domain=${domain}&showDomain=${Number(showDomain)}&theme=${theme}" frameborder="0" scrolling="no"></iframe>`;
+        const html = `<iframe src="https://pcgamer-social.github.io/Mastodon-Activity-Embed/embed.html?domain=${domain}&showDomain=${Number(showDomain)}&theme=${theme}" frameborder="0" scrolling="no"></iframe>`;
         activityEmbed.innerHTML = html;
     }
 </script>
